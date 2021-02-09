@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+<style>
+  body,html{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+
+  background-size: cover;
+}
+
+.container{
+    position: relative;
+    width: 1000px;
+    margin:auto 0;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 440px; 
+    grid-gap: 40px;
+}
+
+.container .card{
+    position: relative;
+    background-color: #000;
+    overflow: hidden;
+    border-radius: 10px;
+  border: solid 10px rgba(250, 250, 250);
+    transition: 0.5s;
+}   
+
+.container .card:hover{
+    transform: translateY(-20px);
+    box-shadow: 0 20px 20px rgba(0,0,0,0.6);
+}   
+
+
+.container .card .img-box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    background-image: url(https://13318002delacid.000webhostapp.com/TariNusantara/Yeremia_Tambunan.JPG);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+}
+
+
+.container .card .img-box-b{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    background-image: url(siska.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+}
+
+.container .card .img-box-c{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    background-image: url(https://13318002delacid.000webhostapp.com/TariNusantara/Devi.JPG);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+}
+.container .card .img-box-d{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    background-image: url(NicoArdiPanjaitan.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+}
+.container .card .img-box-e{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    background-image: url(https://13318002delacid.000webhostapp.com/TariNusantara/DanielNugrahaHS.JPG);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+}
+
+.container .card:hover .img-box{
+    opacity: 0.5;
+    
+}
+
+.container .card:hover .img-box-b{
+    opacity: 0.5;
+    
+}
+
+.container .card:hover .img-box-c{
+    opacity: 0.5;
+    
+}
+
+
+.container .card .content{
+    position: absolute;
+    width: 100%;
+    height: 60%;
+    bottom: -100%;
+    padding: 20px;
+    padding-top: 0px;
+    box-sizing: border-box;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.container .card:hover .content{
+    bottom: 0;
+}
+
+.container .card:nth-child(1) .content{
+    background: linear-gradient(0deg, #c21833, transparent);
+}
+
+.container .card:nth-child(2) .content{
+    background: linear-gradient(0deg, #FF530D, transparent);
+}
+
+.container .card:nth-child(3) .content{
+    background: linear-gradient(0deg, #FFB00D, transparent);
+}
+
+.container .card .content h2{
+    margin: 0 0 10px;
+    padding: 0;
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.container .card .content span{
+    color: #ffcb3b;
+    font-size: 1.1rem;
+}
+
+.container .card .content p{
+    color: #fff;
+    font-size: 1rem;
+}
+
+
+.container .card .content table{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    transition: 0.5s;
+    border-top: solid 1px rgba(255,255,255,0.4);
+}
+
+.container .card .content td{
+    border-right: solid 1px rgba(255,255,255,0.4);
+    padding: 10px;
+    
+}
+
+.container .card .content td:nth-child(4){
+    border-right: solid 0 white;
+}
+#cnt{
+  margin-left: 20%;
+}
+.parallax {
+    padding: 100px;
+    text-align: center;
+    color: white;
+     background-image: url("saman.png");
+ min-height: 600px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+outline: inset;
+outline-color: white;
+}
+#mg{
+  margin-top: 5%;
+  height: 20%;
+  width: 20%;
+  border-radius: 50%;
+}
+</style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Tari Nusantara</title>
+	
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap2.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+
+    <!-- Custom styles for this template -->
+    <link href="css/agency2.min.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">TariNusantara</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="Beranda.html">Beranda</a>
+            </li>
+            <div class="dropdown">
+         <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="Peta.html">Daerah</a>
+            </li>
+         </div>
+         <div class="dropdown">
+         <li class="nav-item">
+              <a class="nav-link js-scroll-trigger">Tarian</a>
+            </li>
+  <div class="dropdown-content">
+    <a href="tortor.html" class="ow">Tor-Tor</a>
+    <a href="gambyong.html" class="ow">Gambyong</a>
+    <a href="gantar.html" class="ow">Gantar</a>
+     <a href="gong.html" class="ow">Gong</a>
+      <a href="kecak.html" class="ow">Kecak</a>
+       <a href="kipasPakarena.html" class="ow">Pakarena</a>
+    <a href="pinggan.html" class="ow">Pinggan</a>
+    <a href="piring.html" class="ow">Piring</a>
+     <a href="sajojo.html" class="ow">Sajojo</a>
+      <a href="saman.html" class="ow">Saman</a>
+         <a href="srimpi.html" class="ow">Srimpi</a>
+  </div>
+</div>
+ <div class="dropdown"> 
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" id="gal">Tentang</a>
+            </li>
+             <div class="dropdown-content">
+    <a href="Tentang.html" class="ow">Team</a>
+    <a href="visimisi.html" class="ow">Visi dan Misi</a>
+   
+  </div>
+</div>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="galeri.html">Galeri</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+         <header class="masthead text-white text-center" id="wk">
+      <div class="parallax">
+        <img id="mg" src="logo.png" alt="" >
+        <h1 class="text-uppercase mb-0">Tentang Team</h1>
+      </div>
+    </header>
+
+  <section class="container">
+
+        <div class="card">
+            <div class="img-box">
+                
+            </div>
+            <div class="content">
+                <h2>Yeremia W Tambunan<br><span>13318040</span> <a href="https://www.instagram.com/cp0031/" class="instagram" target="_blank"><i class="fab fa-instagram"></i></a></h2>
+                <p>saya adalah salah satu pengembang situs Web TariNusantara<br>Saya sekarang kuliah di IT Del di D3 Tehnik Komputer</p>
+                <table>
+                    <tr>
+                        <th>Umur</th>
+                        <th>Profesi</th> 
+                        <th>Kontak</th>
+                      
+                      </tr>
+                      <tr>
+                          <td>18</td>
+                          <td>Mahasiswi</td>
+                          <td>081235157589</td>
+                          
+                      </tr>
+                </table>
+                
+            </div>
+        </div>
+
+           <div class="card">
+            <div class="img-box-b">
+                
+            </div>
+            <div class="content">
+                <h2>Sika Vinie Sihite<br><span>13318004</span> <a href="https://www.instagram.com/cp0031/" class="instagram" target="_blank"><i class="fab fa-instagram"></i></a></h2>
+                <p>saya adalah salah satu pengembang situs Web TariNusantara<br>Saya sekarang kuliah di IT Del di D3 Tehnik Komputer</p>
+                <table>
+                    <tr>
+                        <th>Umur</th>
+                        <th>Profesi</th> 
+                        <th>Kontak</th>
+                      
+                      </tr>
+                      <tr>
+                          <td>18</td>
+                          <td>Mahasiswi</td>
+                          <td>081264532435</td>
+                          
+                      </tr>
+                </table>
+                
+            </div>
+        </div>
+            <div class="card">
+            <div class="img-box-c">
+                
+            </div>
+            <div class="content">
+                <h2>Devi Azhari<br><span>13318045</span> <a href="https://www.instagram.com/cp0031/" class="instagram" target="_blank"><i class="fab fa-instagram"></i></a></h2>
+                <p>saya adalah salah satu pengembang situs Web TariNusantara<br>Saya sekarang kuliah di IT Del di D3 Tehnik Komputer</p>
+                <table>
+                    <tr>
+                        <th>Umur</th>
+                        <th>Profesi</th> 
+                        <th>Kontak</th>
+                      
+                      </tr>
+                      <tr>
+                          <td>18</td>
+                          <td>Mahasiswi</td>
+                          <td>081269235578</td>
+                          
+                      </tr>
+                </table>
+                
+            </div>
+        </div>
+
+    </section>
+<section class="container" id="cnt">
+           <div class="card">
+            <div class="img-box-d">
+                
+            </div>
+            <div class="content">
+                <h2>Nico Ardi Panjaitan<br><span>13318002</span> <a href="https://www.instagram.com/cp0031/" class="instagram" target="_blank"><i class="fab fa-instagram"></i></a></h2>
+                <p>saya adalah salah satu pengembang situs Web TariNusantara<br>Saya sekarang kuliah di IT Del di D3 Tehnik Komputer</p>
+                <table>
+                    <tr>
+                        <th>Umur</th>
+                        <th>Profesi</th> 
+                        <th>Kontak</th>
+                      
+                      </tr>
+                      <tr>
+                          <td>18</td>
+                          <td>Mahasiswa</td>
+                          <td>081269387871</td>
+                          
+                      </tr>
+                </table>
+                
+            </div>
+        </div>
+            <div class="card">
+            <div class="img-box-e">
+                
+            </div>
+            <div class="content">
+                <h2>Daniel N Hutasoit<br><span>13318046</span> <a href="https://www.instagram.com/cp0031/" class="instagram" target="_blank"><i class="fab fa-instagram"></i></a></h2>
+                <p>saya adalah salah satu pengembang situs Web TariNusantara<br>Saya sekarang kuliah di IT Del di D3 Tehnik Komputer</p>
+                <table>
+                    <tr>
+                        <th>Umur</th>
+                        <th>Profesi</th> 
+                        <th>Kontak</th>
+                      
+                      </tr>
+                      <tr>
+                          <td>18</td>
+                          <td>Mahasiswa</td>
+                          <td>081269363476</td>
+                          
+                      </tr>
+                </table>
+                
+            </div>
+        </div>
+    </section>
+     <footer class="footer text-center">
+    </footer>
+
+    <div class="copyright py-4 text-center">
+      <div class="">
+        <small>Copyright &copy; TariNusantara 2018</small>
+      </div>
+    </div>
+
+      <div class="scroll-to-top d-lg-none position-fixed ">
+      <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
+        <i class="fa fa-chevron-up"></i>
+      </a>
+    </div>
+    <script src="vendor/jquery/jquery2.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle2.min.js"></script>
+
+    <script src="js/agency2.min.js"></script>
+
+  </body>
+
+</html>

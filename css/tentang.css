@@ -1,0 +1,214 @@
+  body,html{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+
+  background-size: cover;
+}
+
+.container{
+    position: relative;
+    width: 1000px;
+    margin:auto 0;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 440px; 
+    grid-gap: 40px;
+}
+
+.container .card{
+    position: relative;
+    background-color: #000;
+    overflow: hidden;
+    border-radius: 10px;
+  border: solid 10px rgba(250, 250, 250);
+    transition: 0.5s;
+}   
+
+.container .card:hover{
+    transform: translateY(-20px);
+    box-shadow: 0 20px 20px rgba(0,0,0,0.6);
+}   
+
+
+.container .card .img-box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    background-image: url(https://13318002delacid.000webhostapp.com/TariNusantara/Yeremia_Tambunan.JPG);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+}
+
+
+.container .card .img-box-b{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    background-image: url(siska.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+}
+
+.container .card .img-box-c{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    background-image: url(https://13318002delacid.000webhostapp.com/TariNusantara/Devi.JPG);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+}
+.container .card .img-box-d{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    background-image: url(NicoArdiPanjaitan.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+}
+.container .card .img-box-e{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    background-image: url(https://13318002delacid.000webhostapp.com/TariNusantara/DanielNugrahaHS.JPG);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+}
+
+.container .card:hover .img-box{
+    opacity: 0.5;
+    
+}
+
+.container .card:hover .img-box-b{
+    opacity: 0.5;
+    
+}
+
+.container .card:hover .img-box-c{
+    opacity: 0.5;
+    
+}
+
+
+.container .card .content{
+    position: absolute;
+    width: 100%;
+    height: 60%;
+    bottom: -100%;
+    padding: 20px;
+    padding-top: 0px;
+    box-sizing: border-box;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.container .card:hover .content{
+    bottom: 0;
+}
+
+.container .card:nth-child(1) .content{
+    background: linear-gradient(0deg, #c21833, transparent);
+}
+
+.container .card:nth-child(2) .content{
+    background: linear-gradient(0deg, #FF530D, transparent);
+}
+
+.container .card:nth-child(3) .content{
+    background: linear-gradient(0deg, #FFB00D, transparent);
+}
+
+.container .card .content h2{
+    margin: 0 0 10px;
+    padding: 0;
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.container .card .content span{
+    color: #ffcb3b;
+    font-size: 1.1rem;
+}
+
+.container .card .content p{
+    color: #fff;
+    font-size: 1rem;
+}
+
+
+.container .card .content table{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    transition: 0.5s;
+    border-top: solid 1px rgba(255,255,255,0.4);
+}
+
+.container .card .content td{
+    border-right: solid 1px rgba(255,255,255,0.4);
+    padding: 10px;
+    
+}
+
+.container .card .content td:nth-child(4){
+    border-right: solid 0 white;
+}
+#cnt{
+  margin-left: 20%;
+}
+.parallax {
+    padding: 100px;
+    text-align: center;
+    color: white;
+     background-image: url("saman.png");
+ min-height: 600px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+outline: inset;
+outline-color: white;
+}
+#mg{
+  margin-top: 5%;
+  height: 20%;
+  width: 20%;
+  border-radius: 50%;
+}
